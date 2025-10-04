@@ -1,16 +1,16 @@
 import type { ChatSession, ChatMessage, KnowledgeDocument, UnansweredQuestion, DraftArticle } from './types';
 
 export const mockChatSessions: ChatSession[] = [
-  { id: 'session-1', title: 'How to reset my password?', createdAt: new Date(Date.now() - 86400000 * 3).toISOString() },
-  { id: 'session-2', title: 'Billing issue on my last invoice.', createdAt: new Date(Date.now() - 86400000 * 2).toISOString() },
-  { id: 'session-3', title: 'What are the new features?', createdAt: new Date(Date.now() - 86400000).toISOString() },
+  { id: 'session-1', title: 'What is google docs?', createdAt: new Date(Date.now() - 86400000 * 3).toISOString() },
+  { id: 'session-2', title: 'What is a browser?', createdAt: new Date(Date.now() - 86400000 * 2).toISOString() },
+  { id: 'session-3', title: 'What is a web app?', createdAt: new Date(Date.now() - 86400000).toISOString() },
 ];
 
 export const mockMessages: ChatMessage[] = [
     {
         id: 'msg-1',
         sessionId: 'session-1',
-        content: 'How do I reset my password?',
+        content: 'What is google docs?',
         role: 'user',
         timestamp: new Date(Date.now() - 86400000 * 3 - 60000).toISOString(),
     },
