@@ -50,7 +50,7 @@ export default function Home() {
 
     try {
       // Send message to n8n webhook
-      const response = await fetch('http://localhost:5678/webhook/f65ae4e9-6c8f-4b5a-9a52-b473470d0470', {
+      const response = await fetch('https://abelosaretin.name.ng/webhook/f65ae4e9-6c8f-4b5a-9a52-b473470d0470', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
